@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8748611594.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
        
 </head>
@@ -22,16 +23,16 @@
         <nav>
             <img src="images/logo/Reservia@3x.png" />
             <ul>
-                <li>Hébergements</li>
-                <li>Activités</li>
-                <li>S'inscrire</li>
+                <li><a href="#hebergement-marseille">Hébergement</a></li>
+                <li><a href="#activites-marseille">Activités</a></li>
+                <li><strong>S'inscrire</strong></li>
             </ul>
         </nav>
     </header>
 
     <!-- Recherche -->
     <div class="recherche">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <div id=mapmarker>
             <i class="fas fa-map-marker-alt"></i>
@@ -44,133 +45,152 @@
         <!-- filtres -->
         <div class="filtres">
             <h2>filtres</h2>
-            <div class="economique">
-                <i class="fas fa-money-bill-wave"></i>
-                <h3>Économique</h3>
-            </div>
-            <div class="familial">
-                <i class="fas fa-child"></i>
-                <h3>Familial</h3>
-            </div>
-            <div class=romantique>
-                <i class="fas fa-heart"></i>
-                <h3>Romantique</h3>
-            </div>
-            <div class="animal">
-                <i class="fas fa-dog"></i>
-                <h3>Animaux Autorisés</h3>
-            </div>
+            <button onclick="myFunction()"><i class="fas fa-money-bill-wave"></i>Économique</button>
+            <button onclick="myFunction()"><i class="fas fa-child"></i></i>Familial</button>
+            <button onclick="myFunction()"><i class="fas fa-heart"></i></i>Romantique</button>
+            <button onclick="myFunction()"><i class="fas fa-dog"></i></i>Animaux Autorisés</button>
+            </br>
+
+            <i class="fas fa-info">
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </i>
+
         </div>
 
            
         <!-- Section 1 Hébergement à Marseille -->
            <section id="hebergement-marseille">
-            <h2>Hébergements à Marseille</h2>
-            <div class="cauberge-cannebiere">
-                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" height="100px"
-                    width="200px">
-                <h4>Auberge la Cannebière</h4>
-                <p>Nuit à partir de 25<strong>€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star grey"></i>
-            </div>
-            <div class="hotel-port">
-                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" height="100px"
-                    width="200px">
-                <h4>Hôtel du port</h4>
-                <p>Nuit à partir de 52<strong>€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="hotel-mouettes">
-                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" height="100px" width="200px">
-                <h4>Hôtel Les Mouettes</h4>
-                <p>Nuit à partir de 76<strong>€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star grey"></i>
-            </div>
-            <div class="hotel-mer">
+
+            <h1>Hébergements à Marseille</h1>
+
+
+            <figure>
+                <a href="https://github.com/Azciop/OCR.P2" title="Hôtel du port">
+                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" height="180px"
+                        width="200px">
+
+                    <figcaption>
+                        <h2>Auberge la Cannebière</h2>
+                        <p>Nuit à partir de 25<strong>€</strong></p>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star blue"></i>
+                        <i class="fas fa-star grey"></i>
+                </a>
+                </figcaption>
+            </figure>
+
+
+            <figure>
+                <a href="https://github.com/Azciop/OCR.P2" title="Hôtel du port">
+                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" height="100px"
+                        width="200px" />
+                </a>
+                <figcaption>
+                    <h2>Hôtel du port</h2>
+                    <p>Nuit à partir de 52<strong>€</strong></p>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                    <i class="fas fa-star blue"></i>
+                </figcaption>
+            </figure>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel Les Mouettes">
+                <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Hôtel Les Mouettes</h2>
+            <p>Nuit à partir de 76<strong>€</strong></p>
+            <i class="fas fa-sta blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star grey"></i>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel de la mer">
                 <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" height="100px"
-                    width="200px">
-                <h4>Hôtel de la mer</h4>
-                <p>Nuit à partir de 46<strong>€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star grey"></i>
-                <i class="fas fa-star grey"></i>
-            </div>
-            <div class="auberge-panier">
-                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" height="100px" width="200px">
-                <h4>Auberge Le Panier</h4>
-                <p>Nuit à partir de 23<strong>€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star grey"></i>
-            </div>
-            <div class="hotel-amina">
-                <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="200px"
-                    width="200px">
-                <h4>Hôtel chez Amina</h4>
-                <p>Nuit à partir de 96</strong>€</strong96>
-                </p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
+                    width="200px" />
+            </a>
+            <h2>Hôtel de la mer</h2>
+            <p>Nuit à partir de 46<strong>€</strong></p>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star grey"></i>
+            <i class="fas fa-star grey"></i>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel Le Panier">
+                <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Auberge Le Panier</h2>
+            <p>Nuit à partir de 23<strong>€</strong></p>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star grey"></i>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel chez Amina">
+                <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Hôtel chez Amina</h2>
+            <p>Nuit à partir de 96</strong>€</strong96>
+            </p>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+
             <h3>Afficher plus</h3>
-               
+
         </section> 
 
           
         <!-- Section 2 Les plus populaires -->
            <section id="plus-populaires">
-            <h2>Les plus populaires</h2>
+            <h1>Les plus populaires</h1>
             <i class="fas fa-chart-line"></i>
-            <div class="hotel-soleildumatin">
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" height="150px"
-                    width="125px">
-                <h4>Hôtel Le soleil du matin</h4>
-                <p>Nuit à partir de 128<strong>€</strong></p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="coeureau-chambrehote">
-                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" height="150px"
-                    width="125px">
-                <h4>Au cœur de l'eau Chambres d'hôtes</h4>
-                <p>Nuit à partir de 128<strong>€</strong></p>
-                <i class="fas fa-star blue"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star grey"></i>
-            </div>
-            <div class="hotel-toutbleuetblanc"></div>
-            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" height="150px"
-                width="125px">
-            <h4>Hôtel Tout bleu et Blanc</h4>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel Le soleil du matin">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Hôtel Le soleil du matin</h2>
+            <p>Nuit à partir de 128<strong>€</strong></p>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Au cœur de l'eau Chambres d'hôtes">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Au cœur de l'eau Chambres d'hôtes</h2>
+            <p>Nuit à partir de 128<strong>€</strong></p>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star grey"></i>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel Tout Bleu et Blanc">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Hôtel Tout bleu et Blanc</h2>
             <p>Nuit à partir de 68<strong>€</strong></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
+            <i class="fas fa-star blue"></i>
             <i class="fas fa-star grey"></i>
                
         </section>
@@ -178,33 +198,42 @@
            
         <!-- Section 3 Activités à Marseille -->
            <section id="activites-marseille">
-            <h2>Activités à Marseille</h2>
-            <div class=vieux-port>
-                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" height="325px" width="250">
-                <h4>Vieux Port</h4>
-            </div>
-            <div class="fort-pomegues">
-                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height="150px" width="250px">
-                <h4>Fort de Pomègues</h4>
-            </div>
-            <div class=ile-frioul>
-                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height="75px" width="250px">
-                <h4>Îles du Frioul</h4>
-            </div>
-            <div class="parc-national-calanques">
-                <img src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" height="200px"
-                    width="250px">
-                <h4>Parc National des Calanques</h4>
-            </div>
-            <div class="notre-dame-garde">
-                <img src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" height="200px"
-                    width="250px">
-                <h4>Notre-Dame-de-la-Garde</h4>
-            </div>
-            <div class="parc-longchamp">
-                <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height="200px" width="250px">
-                <h4>Parc Longchamp</h4>
-            </div>
+            <h1>Activités à Marseille</h1>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Vieux Port">
+                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Vieux Port</h2>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Fort de Pomègues">
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Fort de Pomègues</h2>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Îles du Frioul">
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Îles du Frioul</h2>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Parc National des Calanques">
+                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Parc National des Calanques</h2>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Notre-Dame-de-la-Garde">
+                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" height="100px"
+                    width="200px" />
+            </a>
+            <h2>Notre-Dame-de-la-Garde</h2>
+
+            <a href="https://github.com/Azciop/OCR.P2" title="Hôtel du port">
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height="100px" width="200px" />
+            </a>
+            <h2>Parc Longchamp</h2>
                
         </section>
 
@@ -212,18 +241,18 @@
         <!-- Footer -->
            <footer>
             <div class="a-propos">
-                <h4>A propos</h4>
+                <h1>A propos</h1>
                 <p>Fonctionnement du site</p>
                 <p>Conditions génèrales de vente</p>
                 <p>Données et confidentialité</p>
             </div>
             <div class="nos-hebergements">
-                <h4>Nos Hébergements</h4>
+                <h1>Nos Hébergements</h1>
                 <p>Charte qualité</p>
                 <p>Soumettre votre hôtel</p>
             </div>
             <div class="Assistance">
-                <h4>Assitance</h4>
+                <h1>Assitance</h1>
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>
             </div>
