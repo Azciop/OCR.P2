@@ -6,35 +6,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/8748611594.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="flexbetween"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia" width="110px"
-                    height="54px">
-            </div>
-            <ul>
-                <li><a class="colorbleu" href="#hebergement-marseille">Hébergement</a></li>
+    <header class="marginleft">
+        <nav class="flexbetween sizeliens">
+            <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" width="110px" height="54px">
+
+            <ul class="flexaround">
+                <div class="flexaround sizelien12">
+                <li><a href="#hebergement-marseille">Hébergement</a></li>
                 <li><a href="#activites-marseille">Activités</a></li>
+                </div>
                 <li><a class="colorbleu">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
 
-
-    <section>
+    <main id="main-content">
+    <section class="marginleft">
         <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div class="bordersearch flexcentre">
-            <div class="iconsize backgris flexcentre"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="bordersearch flexcenter">
+            <div class="iconsize backgris flexcenter"><i class="fas fa-map-marker-alt"></i></div>
             <input class="recherche" type="search" placeholder="Marseille , France">
-            <button class="backbleu flexcentre buttonsearch">Rechercher</button>
+            <button class="backbleu flexcenter buttonsearch">Rechercher</button>
         </div>
 
 
@@ -43,20 +45,20 @@
         <div class="filtres margfiltre">
             <h3 class="margfiltretitre">Filtres</h3>
             <button class="filtretexteicons flexbetween backblanc"><i
-                    class="fas fa-money-bill-wave fa-lg filtreicons flexcentre"></i><span
-                    class="filtretext flexcentre filtretexte">Economiques</span></button>
+                    class="fas fa-money-bill-wave fa-lg filtreicons flexcenter"></i><span
+                    class="filtretext flexcenter filtretexte">Economiques</span></button>
             <button class="filtretexteicons flexbetween backblanc"><i
-                    class="fas fa-child filtreicons fa-lg flexcentre"></i><span
-                    class="filtretext flexcentre filtretexte">Familiales</span></button>
+                    class="fas fa-child filtreicons fa-lg flexcenter"></i><span
+                    class="filtretext flexcenter filtretexte">Familiales</span></button>
             <button class="filtretexteicons flexbetween backblanc"><i
-                    class="fas fa-heart fa-lg filtreicons flexcentre"></i><span
-                    class="filtretext flexcentre filtretexte">Romantiques</span></button>
+                    class="fas fa-heart fa-lg filtreicons flexcenter"></i><span
+                    class="filtretext flexcenter filtretexte">Romantiques</span></button>
             <button class="filtretexteicons flexbetween backblanc"><i
-                    class="fas fa-dog fa-lg filtreicons flexcentre"></i><span
-                    class="filtretext flexcentre filtretexte">Animaux autorisés</span></button>
+                    class="fas fa-dog fa-lg filtreicons flexcenter"></i><span
+                    class="filtretext flexcenter filtretexte">Animaux autorisés</span></button>
         </div>
         <div class="info">
-            <div class="parenticon flexcentre"><i class="fas fa-info fa-xs colorbleu"></i></div>
+            <div class="parenticon flexcenter"><i class="fas fa-info fa-xs colorbleu"></i></div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
@@ -64,20 +66,20 @@
 
     <!-- Hébergement à Marseille -->
 
-    <section class="flexaround">
-        <div class="flexcolumnaround sizehebergements backgris blochebergements">
+    <section id="hebergements" class="flexaround marginleft flexaroundhebergements">
+        <div class="flexcolumnaround sizehebergements backgrishebergement blochebergements">
             <h2 id="hebergement-marseille">Hébergements à Marseille</h2>
             <div class="flexbetweenhebergements">
 
-                <div class="flexcolumncentre carrehebergements">
+                <div class="flexcolumncenter carrehebergements boxshadow">
                     <a href="#" title="Auberge de la Cannebiére">
-                        <figure>
+                        <figure class="sizeresponsivecarrehebergements">
                             <img class="imghebergements"
                                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Auberge de la Cannebiére">
                             <figcaption class="carredetailshebergements">
 
-                                <h3>Auberge de la Cannebiére</h3>
+                                <h3 class="figcaptionhebergements">Auberge de la Cannebiére</h3>
                                 <p>Nuit à partir de 25<strong>€</strong></p>
                                 <div>
                                     <i class="fas fa-star colorbleu fa-xs"></i>
@@ -91,13 +93,13 @@
                     </a>
                 </div>
 
-                <div class="carrehebergements flexcolumncentre">
+                <div class="carrehebergements flexcolumncenter boxshadow">
                     <a href="#" title="Hôtel du port">
-                        <figure>
+                        <figure class="sizeresponsivecarrehebergements">
                             <img class="imghebergements"
                                 src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                             <figcaption class="carredetailshebergements">
-                                <h3>Hôtel du port</h3>
+                                <h3 class="figcaptionhebergements">Hôtel du port</h3>
                                 <p>Nuit à partir de 52<strong>€</strong></p>
                                 <div>
                                     <i class="fas fa-star colorbleu fa-xs"></i>
@@ -111,13 +113,13 @@
                     </a>
                 </div>
 
-                <div class="carrehebergements flexcolumncentre">
+                <div class="carrehebergements flexcolumncenter boxshadow">
                     <a href="#" title="Hôtel Les mouettes">
-                        <figure>
+                        <figure class="sizeresponsivecarrehebergements">
                             <img class="imghebergements"
                                 src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                             <figcaption class="carredetailshebergements">
-                                <h3>Hôtel Les mouettes</h3>
+                                <h3 class="figcaptionhebergements">Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76<strong>€</strong></p>
                                 <div>
                                     <i class="fas fa-star colorbleu fa-xs"></i>
@@ -131,14 +133,14 @@
                     </a>
                 </div>
 
-                <div class="carrehebergements flexcolumncentre">
+                <div class="carrehebergements flexcolumncenter boxshadow">
                     <a href="#" title="Hôtel de la mer">
-                        <figure>
+                        <figure class="sizeresponsivecarrehebergements">
                             <img class="imghebergements"
                                 src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
 
                             <figcaption class="carredetailshebergements">
-                                <h3>Hôtel de la mer</h3>
+                                <h3 class="figcaptionhebergements">Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46<strong>€</strong></p>
                                 <div>
                                     <i class="fas fa-star colorbleu fa-xs"></i>
@@ -152,13 +154,13 @@
                     </a>
                 </div>
 
-                <div class="carrehebergements flexcolumncentre">
+                <div class="carrehebergements flexcolumncenter boxshadow">
                     <a href="#" title="Auberge Le Panier">
-                        <figure>
+                        <figure class="sizeresponsivecarrehebergements">
                             <img class="imghebergements"
                                 src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                             <figcaption class="carredetailshebergements">
-                                <h3>Auberge Le Panier</h3>
+                                <h3 class="figcaptionhebergements">Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23<strong>€</strong></p>
                                 <div>
                                     <i class="fas fa-star colorbleu fa-xs"></i>
@@ -172,14 +174,14 @@
                     </a>
                 </div>
 
-                <div class="carrehebergements flexcolumncentre">
+                <div class="carrehebergements flexcolumncenter boxshadow">
                     <a href="#" title="Hôtel chez Amina">
-                        <figure>
+                        <figure class="sizeresponsivecarrehebergements">
                             <img class="imghebergements"
                                 src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                             <figcaption class="carredetailshebergements">
 
-                                <h3>Hôtel chez Amina</h3>
+                                <h3 class="figcaptionhebergements">Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 86<strong>€</strong></p>
                                 <div>
                                     <i class="fas fa-star colorbleu fa-xs"></i>
@@ -198,7 +200,7 @@
             </div>
         </div>
         <!-- Populaires -->
-        <div class="sizepopulaires backgris blocpopulaires">
+        <div class="sizepopulaires backgrishebergement blocpopulaires">
             <div class="flexbetween">
                 <h2 class="plus-populaires">Les plus populaires</h2>
                 <div><i class="fas fa-chart-line fa-2x"></i></div>
@@ -206,7 +208,7 @@
             <div class="flexcolumnaround">
 
 
-                <div class="flexcentre carrepopulaires blocpopulaires12">
+                <div class="flexcenter carrepopulaires blocpopulaires12 boxshadow">
                     <a href="#" title="Hôtel Le soleil du matin">
                         <figure class="figurepopulaires">
                             <img class="imgpopulaires"
@@ -225,7 +227,7 @@
                     </a>
                 </div>
 
-                <div class="flexcentre carrepopulaires blocpopulaires12">
+                <div class="flexcenter carrepopulaires blocpopulaires12 boxshadow">
                     <a href="#" title="Au cœur de l'eau Chambres d'hôtes">
                         <figure class="figurepopulaires">
                             <img class="imgpopulaires"
@@ -245,7 +247,7 @@
                     </a>
                 </div>
 
-                <div class="flexcentre carrepopulaires">
+                <div class="flexcenter carrepopulaires blocpopulaires3 boxshadow">
                     <a href="#" title="Hôtel Tout bleu et Blanc">
                         <figure class="figurepopulaires3">
                             <img class="imgpopulaires"
@@ -275,7 +277,7 @@
         <h2><strong>Activités à Marseille</strong></h2>
 
         <div class="gridactivites">
-            <div class=" activitesitem1">
+            <div class=" activitesitem1 imgactivites">
                 <a href="" title="Vieux Port">
                     <figure class="carreactivites">
                         <img class="imgactivites1"
@@ -288,7 +290,7 @@
             </div>
 
 
-            <div class="activitesitem2">
+            <div class="activitesitem2 imgactivites">
                 <a href="" title="Fort de Pomègues">
                     <figure class="carreactivites">
                         <img class="imgactivites2"
@@ -302,7 +304,7 @@
             </div>
 
 
-            <div class="activitesitem3">
+            <div class="activitesitem3 imgactivites">
                 <a href="" title="Îles du Frioul">
                     <figure class="carreactivites">
                         <img class="imgactivites3"
@@ -315,7 +317,7 @@
             </div>
 
 
-            <div class="activitesitem4">
+            <div class="activitesitem4 imgactivites">
                 <a href="" title="Parc National des Calanques">
                     <figure class="carreactivites">
                         <img class="imgactivites4"
@@ -328,7 +330,7 @@
             </div>
 
 
-            <div class="activitesitem5">
+            <div class="activitesitem5 imgactivites">
                 <a href="" title="Notre-Dame-de-la-Garde">
                     <figure class="carreactivites">
                         <img class="imgactivites5"
@@ -340,7 +342,7 @@
                 </a>
             </div>
 
-            <div class="activitesitem6">
+            <div class="activitesitem6 imgactivites">
                 <a href="" title="Hôtel du port">
                     <figure class="carreactivites">
                         <img class="imgactivites6"
@@ -356,6 +358,7 @@
     </section>
 
     </section>
+    </main>
 
 
     <!-- Footer -->
