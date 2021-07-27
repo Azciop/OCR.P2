@@ -58,6 +58,10 @@
 	background-color: #f2f2f2;
 }
 
+.backgrisfooter {
+	background-color: #f2f2f2;
+}
+
 .backgrishebergement {
 	background-color: #f2f2f2;
 }
@@ -115,10 +119,9 @@ nav a:hover {
 }
 
 /* Header */
-/* main */
 
 header {
-	margin: 0 auto;
+	margin: 20px auto 0 auto;
 	max-width: 1470px;
 }
 
@@ -162,6 +165,13 @@ header {
 	cursor: pointer;
 	border-radius: 0 10px 10px 0;
 	border: none;
+}
+
+.buttonsearchresponsive2 {
+	display: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 10px;
 }
 
 /* Filtres */
@@ -497,7 +507,7 @@ header {
 
 .footer {
 	height: 300px;
-	margin: 50px -10px -10px -10px;
+	margin: 50px -8px -10px -10px;
 }
 
 .sizeblocfooter {
@@ -520,11 +530,10 @@ footer li {
 
 /* laptop */
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1530px) {
 	#main-content {
-		margin: 0 20px;
+		margin: 20px 20px;
 	}
-
 	.carrehebergements {
 		width: 100%;
 		background-color: white;
@@ -560,6 +569,12 @@ footer li {
 }
 
 @media screen and (max-width: 1309px) {
+	nav ul {
+		margin-right: 20px;
+	}
+	nav li a {
+		margin-right: 20px;
+	}
 	.sizelien12 {
 		margin-left: 35%;
 	}
@@ -567,7 +582,52 @@ footer li {
 
 /* tablette */
 
-@media all and (min-width: 412px) and (max-width: 975px) {
+@media all and (min-width: 776px) and (max-width: 1200px) {
+	.gridactivites {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 200px 200px;
+		grid-column-gap: 20px;
+	}
+	.activitesitem1 {
+		grid-column-start: 1;
+		grid-row-start: 1;
+		grid-row-end: span 1;
+	}
+	.activitesitem2 {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		grid-row-end: span 1;
+	}
+	.activitesitem3 {
+		grid-column-start: 3;
+		grid-row-start: 1;
+		grid-row-end: span 1;
+	}
+	.activitesitem4 {
+		grid-column-start: 1;
+		grid-row-start: 2;
+		grid-row-end: span 1;
+	}
+	.activitesitem5 {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		grid-row-end: span 1;
+	}
+	.activitesitem6 {
+		grid-column-start: 3;
+		grid-row-start: 2;
+		grid-row-end: span 1;
+	}
+	.imgactivitesresponnsive {
+		height: 140px;
+	}
+	.descriptionactivites {
+		height: 40px;
+	}
+}
+
+@media all and (min-width: 751px) and (max-width: 975px) {
 	.sizelien12 {
 		margin-left: 35%;
 	}
@@ -577,7 +637,7 @@ footer li {
 	.flexwrapfiltres {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: start;
 		align-items: flex-start;
 		flex-wrap: wrap;
 	}
@@ -671,8 +731,139 @@ footer li {
 
 /* phone */
 
-@media all and (max-width: 411px) {
+@media all and (max-width: 750px) {
+	body {
+		max-width: 800px;
+	}
+	.bordersearch {
+		width: 338px;
+	}
+	.buttonsearchresponsive1 {
+		display: none;
+	}
+	.buttonsearchresponsive2 {
+		display: flex;
+	}
+	.margfiltretitre {
+		width: 100%;
+	}
+	.flexwrapfiltres {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	#hebergements {
+		flex-direction: column-reverse;
+	}
+	#hebergement-marseille {
+		margin-bottom: 0%;
+	}
+	.backgrishebergement {
+		background-color: white;
+	}
+	.flexhebergements {
+		flex-direction: column;
+	}
+	.sizehebergements {
+		margin-top: 2%;
+		width: 100%;
+	}
+	.carrehebergements {
+		width: 100%;
+	}
+	.flexhebergements {
+		font-size: 1.3em;
+
+		margin-left: -3%;
+	}
+	.flexhebergements1 {
+		width: 100%;
+	}
+	.flexhebergements2 {
+		width: 100%;
+	}
+	.widthlinkresponsive {
+		width: 100%;
+	}
+
+	.imghebergements {
+		height: 150px;
+	}
+	.sizepopulaires {
+		margin-left: 0;
+		border-radius: 0;
+		width: 100%;
+	}
+	.carredetailspopulaires {
+		font-size: 1.2em;
+	}
+	#activites-marseille {
+		width: 105%;
+	}
+	.gridactivites {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.imgactivitesresponnsive {
+		height: 250px;
+	}
+
+	.carreactivites {
+		margin-bottom: 2%;
+	}
+
 	.footer {
 		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+	}
+	.a-propos {
+		margin: 0px 0px 2% 0px;
+		padding-bottom: 25px;
+	}
+	.nos-hebergements {
+		margin-bottom: 0%;
+		padding-bottom: 0px;
+	}
+	.margeblocfooter3 {
+		margin: 0;
+	}
+	.backgrisfooter {
+		height: auto;
+		min-width: 110%;
+	}
+	footer h3 {
+		font-size: 1.5em;
+	}
+	footer a {
+		font-size: 1.2em;
+	}
+}
+
+@media all and (max-width: 650px) {
+	#main-content {
+		margin-left: 10px;
+	}
+
+	.sizeliens {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	nav ul {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.sizelien12 {
+		order: 1;
+		width: 100%;
+		margin-left: 0px;
+	}
+	.sizepopulaires {
 	}
 }

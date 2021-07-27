@@ -12,7 +12,7 @@
     <title>Reservia</title>
 </head>
 
-<body>
+<body id="main-content">
     <header>
         <nav class="flexbetween sizeliens">
             <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" width="110px" height="54px">
@@ -27,7 +27,7 @@
         </nav>
     </header>
 
-    <main id="main-content">
+    <main>
         <section>
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -36,7 +36,10 @@
             <div class="bordersearch flexcenter">
                 <div class="iconsize backgris flexcenter"><i class="fas fa-map-marker-alt"></i></div>
                 <input class="recherche" type="search" placeholder="Marseille , France">
-                <button class="backbleu flexcenter buttonsearch">Rechercher</button>
+                <div class="buttonsearchresponsive1"><button
+                        class="backbleu flexcenter buttonsearch">Rechercher</button></div>
+                <div class="backbleu flexcenter buttonsearch buttonsearchresponsive2"><i class="fas fa-search"></i>
+                </div>
             </div>
 
 
@@ -44,7 +47,7 @@
 
             <div class="filtres margfiltre">
                 <div class="flexwrapfiltres flexbetween">
-                <h3 class="margfiltretitre">Filtres</h3>
+                    <h3 class="margfiltretitre">Filtres</h3>
                     <button class="filtretexteicons flexbetween backblanc"><i
                             class="fas fa-money-bill-wave fa-lg filtreicons flexcenter"></i><span
                             class="filtretext flexcenter filtretexte">Economiques</span></button>
@@ -99,7 +102,7 @@
                         </div>
 
                         <div class="carrehebergements flexcolumncenter boxshadow">
-                            <a href="#" title="Hôtel du port">
+                            <a class="widthlinkresponsive" href="#" title="Hôtel du port">
                                 <figure class="sizeresponsivecarrehebergements">
                                     <img class="imghebergements"
                                         src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
@@ -141,7 +144,7 @@
 
                     <div class="flexhebergements2">
                         <div class="carrehebergements flexcolumncenter boxshadow ">
-                            <a href="#" title="Hôtel de la mer">
+                            <a href="#" class="widthlinkresponsive" title="Hôtel de la mer">
                                 <figure class="sizeresponsivecarrehebergements">
                                     <img class="imghebergements"
                                         src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
@@ -182,7 +185,7 @@
                         </div>
 
                         <div class="carrehebergements flexcolumncenter boxshadow ">
-                            <a href="#" title="Hôtel chez Amina">
+                            <a href="#" class="widthlinkresponsive" title="Hôtel chez Amina">
                                 <figure class="sizeresponsivecarrehebergements">
                                     <img class="imghebergements"
                                         src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
@@ -365,14 +368,13 @@
 
         </section>
 
-        </section>
     </main>
 
 
     <!-- Footer -->
-    <footer class="footer backgris flexbetween">
+    <footer class="footer backgrisfooter flexbetween">
         <div class="a-propos sizeblocfooter margeblocfooter1">
-            <ul class="">
+            <ul class="a-propos">
                 <h3>A propos</h3>
                 <li><a href="#">Fonctionnement du site</a></li><br>
                 <li> <a href="#">Conditions génèrales de vente</a></li><br>
