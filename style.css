@@ -199,6 +199,7 @@ header {
 	height: 50px;
 	border-radius: 30px;
 	margin-right: 20px;
+	margin-bottom: 10px;
 }
 
 .filtretexteicons:hover > .filtretexte {
@@ -259,6 +260,10 @@ header {
 .flexaroundhebergements {
 	display: flex;
 	justify-content: space-around;
+}
+
+.widthlink {
+	width: 100%;
 }
 
 .flexhebergements1 {
@@ -535,8 +540,11 @@ footer li {
 /* laptop */
 
 @media screen and (max-width: 1530px) {
+	header {
+		margin: 20px;
+	}
 	#main-content {
-		margin: 0px;
+		margin: 20px;
 	}
 	.carrehebergements {
 		width: 100%;
@@ -569,16 +577,6 @@ footer li {
 
 	.heightpopulairesresponsive {
 		height: 95%;
-	}
-}
-
-@media screen and (max-width: 1309px) {
-	nav ul {
-		margin-right: 20px;
-	}
-	nav li a {
-	}
-	.sizelien12 {
 	}
 }
 
@@ -630,6 +628,12 @@ footer li {
 }
 
 @media all and (min-width: 751px) and (max-width: 975px) {
+	nav ul {
+		margin-right: 20px;
+	}
+	nav li {
+		padding-right: 30px;
+	}
 	.sizelien12 {
 		margin-left: 35%;
 	}
@@ -662,7 +666,7 @@ footer li {
 
 	.carrepopulaires {
 		width: 30%;
-		padding: 0.7%;
+		padding: 0.5%;
 		height: 100%;
 	}
 
@@ -788,10 +792,6 @@ footer li {
 	.flexhebergements2 {
 		width: 100%;
 	}
-	.widthlinkresponsive {
-		width: 100%;
-	}
-
 	.imghebergements {
 		height: 150px;
 	}
@@ -823,10 +823,11 @@ footer li {
 		flex-direction: column;
 		justify-content: start;
 		align-items: flex-start;
+		margin: 0px 0px 0px -10px;
 	}
+
 	.a-propos {
-		margin: 0px 0px 2% 0px;
-		padding-bottom: 25px;
+		margin: 0px 0px 5% 0px;
 	}
 	.nos-hebergements {
 		margin-bottom: 0%;
@@ -867,9 +868,17 @@ footer li {
 		width: 100%;
 		margin-left: 0px;
 	}
-	.sizepopulaires {
-	}
 	.sizeliens {
 		flex-direction: column;
+	}
+	#search {
+		padding-left: 20px;
+	}
+	#activites-marseille {
+		padding: 20px;
+		padding-bottom: 0px;
+	}
+	.imgactivites {
+		margin-bottom: 20px;
 	}
 }
