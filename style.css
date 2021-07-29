@@ -99,7 +99,7 @@ body {
 }
 
 .sizelien12 {
-	width: 70%;
+	width: ;
 }
 
 nav ul {
@@ -533,7 +533,10 @@ header {
 
 footer li {
 	list-style: none;
+	margin-bottom: 20px ;
 }
+
+
 
 /* responsive */
 
