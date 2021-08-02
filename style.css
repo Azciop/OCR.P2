@@ -112,8 +112,8 @@ a {
 }
 
 nav a:hover {
-	border-top: 1px solid #0065fc;
-	padding-top: 24px;
+	border-top: 5px solid #0065fc;
+	padding-top: 35px;
 	color: #0065fc;
 }
 
@@ -528,10 +528,8 @@ header {
 
 footer li {
 	list-style: none;
-	margin-bottom: 20px ;
+	margin-bottom: 20px;
 }
-
-
 
 /* responsive */
 
@@ -739,6 +737,9 @@ footer li {
 	body {
 		max-width: 800px;
 	}
+	nav ul {
+		width: 60%;
+	}
 	.bordersearch {
 		width: 338px;
 	}
@@ -850,11 +851,10 @@ footer li {
 	#main-content {
 		margin: 0px;
 	}
-
-	.sizeliens {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+	#logo {
+		position: absolute;
+		left: 20px;
+		top: 20px;
 	}
 	nav ul {
 		width: 100%;
@@ -864,7 +864,10 @@ footer li {
 	.sizelien12 {
 		order: 1;
 		width: 100%;
-		margin-left: 0px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 	.sizeliens {
 		flex-direction: column;
