@@ -873,6 +873,19 @@ footer li {
 		width: 50%;
 		text-align: center;
 	}
+	nav a:hover {
+		border-top: none;
+	}
+	.borderdesignresponsive:hover {
+		border-bottom: 3px solid #0065fc;
+		padding-bottom: 20px;
+		
+	}
+	.borderdesignresponsive {
+		border-bottom: 3px solid #f2f2f2;
+		padding-top: 35px;
+		padding-bottom: 20px;
+	}
 	.sizeliens {
 		flex-direction: column;
 		align-items: flex-start;
